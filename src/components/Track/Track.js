@@ -1,16 +1,17 @@
 import React from "react";
+import styles from "./Track.module.css";
 
 function Track (props) {
   function renderAction() {
     if (props.isRemoval){
       return (
-        <button className={style["Track-Action"]} onClick={passTrackToRemove}>
+        <button className={styles["Track-Action"]} onClick={passTrackToRemove}>
           -
         </button>
       );
     } else{
       return (
-        <button className={style["Track-Action"]} onClick={passTrack}>
+        <button className={styles["Track-Action"]} onClick={passTrack}>
         +
       </button>
       );

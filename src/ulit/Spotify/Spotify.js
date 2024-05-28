@@ -1,6 +1,6 @@
-const clientId = 'de83f921a25b43f49153b0498b041bfa'; // Insert client ID here.
-const redirectUri = 'https://open.spotify.com'; // Have to add this to your accepted Spotify redirect URIs on the Spotify API.
-let accessToken;
+let accessToken = "";
+const clientID = 'de83f921a25b43f49153b0498b041bfa'; 
+const redirectUrl = 'https://seuxsjammingproject.surge.sh'; 
 
 const Spotify = {
   getAccessToken() {

@@ -3,7 +3,7 @@ import styles from "./App.module.css";
 import SearchResults from "../SearchResults/SearchResults";
 import Playlist from "../Playlist/Playlist";
 import SearchBar from "../Searchbar/SearchBar";
-import { Spotify } from "../../util/Spotify/Spotify";
+import { Spotify } from "../../ulit/Spotify/Spotify";
 
 function App () {
   const [searchResults, setSearchResults] = useState([
@@ -83,7 +83,7 @@ function App () {
         <div className={styles.App}>
           {/* <!-- Add a SearchBar component --> */}
           <SearchBar onSearch={search} />
-          <div className={styles.App-playlist}>
+          <div className={styles["App-Playlist"]}>
             {/* <!-- Add a SearchResults component --> */}
             <SearchResults userSearchResults={searchResults} onAdd={addTrack} />
             {/* <!-- Add a Playlist component --> */}
