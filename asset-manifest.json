@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/Music-Project/static/css/main.c2102724.css",
+    "main.js": "/Music-Project/static/js/main.da11119e.js",
+    "static/media/background.jpg": "/Music-Project/static/media/background.c2f9153e30bc16d219dc.jpg",
+    "index.html": "/Music-Project/index.html",
+    "main.c2102724.css.map": "/Music-Project/static/css/main.c2102724.css.map",
+    "main.da11119e.js.map": "/Music-Project/static/js/main.da11119e.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c2102724.css",
+    "static/js/main.da11119e.js"
+  ]
+}
