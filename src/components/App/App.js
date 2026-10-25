@@ -69,10 +69,23 @@ function App () {
     });
   }
 
-  function search(term) {
-    Spotify.search(term).then((result) => setSearchResults(result));
-    console.log(term);
+  
+  async function search(term) {
+    if (!term.trim()) {
+      setSearchResults([]);
+      return;
+    }
+
+    try {
+      const result = await Spotify.search(term);
+      setSearchResults(result);
+      console.log("Spotify search results:", result);
+    } catch (error) {
+      console.error("Spotify search failed:", error);
+      alert(`Search failed: ${error.message}`);
+    }
   }
+
 
 
     return (
